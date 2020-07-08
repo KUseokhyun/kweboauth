@@ -1,0 +1,32 @@
+<html lang="kr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kweb Oauth2.0 Test Page</title>
+    <style>
+        button {
+            width: 100px;
+            background-color: rgb(221, 226, 235);
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        button:hover {
+            background-color: rgba(185, 182, 182, 0.747);
+        }
+    </style>
+</head>
+<body>
+    <h1>Signed</h1>
+    <div id="information"></div>
+    <div>
+        ID: <%= data.id %>
+        <br>Name: <%= data.name %>
+        <br>Profile Image:
+        <br><img src="<%= data.picture %>">
+        <br>Location: <%= data.locale %>
+        <br><a href="http://test.kweboauth.kro.kr:80/"><button>Sign out</button></a>
+    </div>
+</body>
+</html>
